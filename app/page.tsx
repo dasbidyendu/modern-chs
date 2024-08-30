@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Navbar from "./components/navbar";
 import MidSection from "./components/mid-section";
 import Cards from "./components/cards";
+import Carousel from "./components/carousel";
 
 export default function Home() {
   return (
@@ -9,6 +12,7 @@ export default function Home() {
       <Navbar />
       <MidSection />
       <Cards />
+      <Carousel />
     </div>
   );
 }

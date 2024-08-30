@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body{
+  background-color: #dddbfb;
+}
 .e-button{
   background: rgb(255,0,0);
   background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(243,52,224,1) 100%);
@@ -36,9 +38,12 @@ h1:hover{
    
 
 }
-.cards{
+.card{
   z-index: 10;
-  animation: upanim 0.7s ease-out forwards;
+  animation: upanim 2.5s ease-in-out forwards;
+}
+.cards{
+  margin-bottom: 50px ;
 }
 
 @keyframes upanim{
@@ -51,9 +56,47 @@ h1:hover{
   }
   100%{
     opacity:1;
-    transform: translateY(-63%);
+    transform: translateY(-263px);
   }
 }
-.card{
 
+
+.mid{
+  animation: appear 2s linear forwards;
+ 
+}
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+ 
+  100%{
+    opacity: 1;
+  }
+}
+
+.navbar{
+  animation: appear 3.5s ease-in forwards;
+}
+
+
+.carousel{
+  
+  z-index: -1;
+  scroll-snap-type: x mandatory ;
+  scroll-padding: 0 0px;
+  animation: upanim 2.5s ease-in-out forwards;
+}
+
+
+.carousel .item{
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.item-a{
+  background-image: url("/bg.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }

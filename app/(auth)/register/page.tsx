@@ -4,25 +4,35 @@ import AuthSideCard from "@/app/components/auth-side-card";
 import axios from "axios";
 import { NextApiResponse } from "next";
 import { useState } from "react";
+import dbConnect from "@/lib/dbConnect";
 
 const page = () => {
   const [email, setEmail] = useState("");
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
-  const data = { email: email, userName: userName, password: password };
+  const data = { email, userName, password };
 
   const handleRegister = async () => {
     try {
+      await dbConnect();
+      console.log("connected database");
       const response = await axios.post("/api/register", data);
-    } catch (err: any) {}
+
+      console.log(response, "user successfully registered");
+    } catch (err: any) {
+      console.log(err.message, "error registering user");
+    }
   };
 
   return (
     <div className="h-dvh w-dvw bg-transparent flex justify-center items-center  ">
       <form
         className="w-1/3 h-1/2 flex flex-col gap-[10px] justify-center "
-        onSubmit={handleRegister}
+        onSubmit={(e) => {
+          e.preventDefault();
+          handleRegister();
+        }}
       >
         <legend className="text-[#0000007e]">mail id</legend>
         <input

@@ -103,3 +103,19 @@ h1:hover{
 .card:hover{
   background: rgb(159,173,245);background: linear-gradient(137deg, rgba(159,173,245,1) 0%, rgba(53,85,251,1) 100%);
 }
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

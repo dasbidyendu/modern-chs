@@ -83,14 +83,13 @@ h1:hover{
 .carousel{
   
   z-index: -1;
-  scroll-snap-type: x mandatory ;
-  scroll-padding: 0 0px;
+  
   animation: upanim 2.5s ease-in-out forwards;
 }
 
 
 .carousel .item{
-  scroll-snap-align: start;
+  
   flex-shrink: 0;
 }
 
@@ -99,4 +98,8 @@ h1:hover{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.card:hover{
+  background: rgb(159,173,245);background: linear-gradient(137deg, rgba(159,173,245,1) 0%, rgba(53,85,251,1) 100%);
 }

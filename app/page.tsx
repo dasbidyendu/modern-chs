@@ -8,7 +8,7 @@ import Cards from "./components/cards";
 
 export default function Home() {
   return (
-    <div className="bg-[#DDDBFB] w-dvw h-dvh pt-[50px]">
+    <div className="bg-[#DDDBFB] w-dvw h-dvh pt-[0px]">
       <Navbar />
       <MidSection />
       <Cards />

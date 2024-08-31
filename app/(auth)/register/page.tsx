@@ -1,10 +1,9 @@
 "use client";
 
 import AuthSideCard from "@/app/components/auth-side-card";
-import axios from "axios";
-import { NextApiResponse } from "next";
+
 import { useState } from "react";
-import dbConnect from "@/lib/dbConnect";
+
 
 const page = () => {
   const [email, setEmail] = useState("");
@@ -13,53 +12,32 @@ const page = () => {
 
   const data = { email, userName, password };
 
-  const handleRegister = async () => {
-    try {
-      await dbConnect();
-      console.log("connected database");
-      const response = await axios.post("/api/register", data);
-
-      console.log(response, "user successfully registered");
-    } catch (err: any) {
-      console.log(err.message, "error registering user");
-    }
-  };
-
   return (
     <div className="h-dvh w-dvw bg-transparent flex justify-center items-center  ">
       <form
         className="w-1/3 h-1/2 flex flex-col gap-[10px] justify-center "
-        onSubmit={(e) => {
-          e.preventDefault();
-          handleRegister();
-        }}
+        
       >
         <legend className="text-[#0000007e]">mail id</legend>
         <input
           className="w-2/3 h-[30px] outline-none border-none px-2 rounded-[10px] focus:shadow-[#7a7eceab] focus:shadow-md transition-all"
           type="text"
           required
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
+          
         ></input>
         <legend className="text-[#0000007e]">name</legend>
         <input
           className="w-2/3 h-[30px] outline-none border-none px-2 rounded-[10px] focus:shadow-[#7a7eceab] focus:shadow-md transition-all"
           type="text"
           required
-          onChange={(e) => {
-            setUserName(e.target.value);
-          }}
+          
         ></input>
         <legend className="text-[#0000007e]">password</legend>
         <input
           className="w-2/3 h-[30px] outline-none border-none px-2 rounded-[10px] focus:shadow-[#7a7eceab] focus:shadow-md transition-all"
           type="password"
           required
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
+          
         ></input>
         <legend className="text-[#0000007e]">confirm password</legend>
         <input

@@ -1,12 +1,14 @@
 "use client";
 
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Calendar } from "@/components/ui/calendar";
 import Image from "next/image";
 import Link from "next/link";
 import { FiPlusCircle } from "react-icons/fi";
 
 const page = () => {
   return (
-    <div className=" overflow-y-scroll h-full flex-1 flex flex-col py-[50px] ">
+    <div className=" overflow-y-scroll scroll-smooth h-full flex-1 flex flex-col py-[50px] ">
       <div className="flex justify-center items-center">
         <div className=" flex flex-col gap-[50px] py-[50px] px-[180px]">
           <div className="w-[600px] h-[300px] shadow-md rounded-2xl bg-gradient-to-br from-[#7270D84e] to-[#fd55924e] flex justify-center items-center">
@@ -65,8 +67,8 @@ const page = () => {
             </Link>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center">
-          <div className="w-[600px] h-[650px] bg-gradient-to-b from-[#314bd27e] rounded-[30px] to-[#a985f67e] flex flex-col justify-start pt-[50px] items-center">
+        <div className="flex flex-col items-center justify-center mr-[175px] gap-[50px]">
+          <div className="w-[600px] h-[650px] bg-gradient-to-b from-[#314bd27e] rounded-[30px] px-[10px] to-[#a985f67e] flex flex-col justify-start pt-[50px] items-center">
             <p className="text-[25px] text-gray-200 font-light">APPOINTMENTS</p>
             <div className="overflow-x-auto">
               <table className="table">
@@ -84,35 +86,54 @@ const page = () => {
                   {/* row 1 */}
                   <tr className="hover:bg-[#ffffff4a]">
                     <th>1</th>
-                    <td>Cy Ganderton</td>
-                    <td>Quality Control Specialist</td>
-                                      <td>Blue</td>
-                                      <td>
-                                      <span className="countdown font-mono text-2xl">
-  <span style={{"--value":10}}></span>:
-  <span style={{"--value":24}}></span>:
-  <span style={{"--value":${counter}}}></span>
-</span>
-                                      </td>
+                    <td>Dr. Anmol Nayak</td>
+                    <td>Physiology</td>
+                    <td>1 Sept</td>
+                    <td>10:25 AM</td>
                   </tr>
                   {/* row 2 */}
                   <tr className="hover:bg-[#ffffff4a]">
                     <th>2</th>
-                    <td>Hart Hagerty</td>
-                    <td>Desktop Support Technician</td>
-                                      <td>Purple</td>
-                                      
+                    <td>Dr. Meenal Sharma</td>
+                    <td>Neurology</td>
+                    <td>30 Sept</td>
+                    <td>1:55 PM</td>
                   </tr>
                   {/* row 3 */}
                   <tr className="hover:bg-[#ffffff4a]">
                     <th>3</th>
-                    <td>Brice Swyre</td>
-                    <td>Tax Accountant</td>
-                    <td>Red</td>
+                    <td>Dr. Kunal Sharma</td>
+                    <td>Cardiology</td>
+                    <td>12 Oct</td>
+                    <td>6:00 PM</td>
                   </tr>
                 </tbody>
               </table>
+              <div className="w-full h-fit flex justify-center items-center pt-[50px]">
+                <Calendar mode="single" />
+              </div>
             </div>
+          </div>
+          <div className="w-[600px] h-[300px] rounded-3xl bg-[#314bd24e] flex flex-col text-[25px] font-light text-black gap-4 justify-center items-center">
+            <Alert className="text-left bg-[#314bd27e] w-3/4 rounded-xl shadow-md border-none outline-none">
+              <AlertTitle>Pain Medications</AlertTitle>
+              <AlertDescription>
+                You have to take medications at 9:00 PM
+              </AlertDescription>
+            </Alert>
+            <Alert className="text-left bg-[#314bd27e] w-3/4 rounded-xl shadow-md border-none outline-none">
+              <AlertTitle>Neuro Medications</AlertTitle>
+              <AlertDescription>
+                You have to take medications at 10:00 PM
+              </AlertDescription>
+            </Alert>
+            <Alert className="text-left bg-[#314bd27e] w-3/4 rounded-xl shadow-md border-none outline-none">
+              <AlertTitle>Sugar Medications</AlertTitle>
+              <AlertDescription>
+                You have to take medications at 10:15 PM
+              </AlertDescription>
+            </Alert>
+            TIME TO TAKE YOUR MEDICATIONS
           </div>
         </div>
       </div>
@@ -134,6 +155,39 @@ const page = () => {
             >
               Rate a hospital
             </Link>
+          </div>
+        </div>
+      </div>
+      <div className="w-full h-fit flex justify-center items-center">
+        <div className="w-1/3 py-4 my-4 gap-4 h-fit rounded-xl bg-[#111a471b] text-[25px] flex justify-center items-center text-black font-normal">
+          <p>RATE US</p>
+          <div className="rating">
+            <input
+              type="radio"
+              name="rating-1"
+              className="mask mask-star bg-gray-300"
+            />
+            <input
+              type="radio"
+              name="rating-1"
+              className="mask mask-star bg-gray-300"
+              defaultChecked
+            />
+            <input
+              type="radio"
+              name="rating-1"
+              className="mask mask-star bg-gray-300 "
+            />
+            <input
+              type="radio"
+              name="rating-1"
+              className="mask mask-star bg-gray-300 "
+            />
+            <input
+              type="radio"
+              name="rating-1"
+              className="mask mask-star bg-gray-300 "
+            />
           </div>
         </div>
       </div>

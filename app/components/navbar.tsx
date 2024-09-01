@@ -18,7 +18,10 @@ const Navbar = () => {
           >
             SIGNUP
           </Link>
-          <Link href={"/"} className="text-xl font-light cursor-pointer ">
+          <Link
+            href={"/premium"}
+            className="text-xl font-light cursor-pointer "
+          >
             PREMIUM
           </Link>
           <button className="e-button rounded-full px-6 py-2 text-xl">

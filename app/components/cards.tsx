@@ -1,6 +1,6 @@
 const Cards = () => {
   return (
-    <div className="flex items-center justify-center gap-[50px] bg-transparent cards">
+    <div className="flex items-center justify-center gap-[50px] bg-[#dddbfb] mb-0 cards">
       <div className="h-[350px] w-[300px] bg-[#2940b2] rounded-[50px] flex flex-col card justify-start py-12 border border-[#2d2c52] items-center px-8 gap-[20px] text-left text-white">
         <h1 className="cursor-default text-left w-full text-xl">BLOOD BANK</h1>
         <p className="text-sm">

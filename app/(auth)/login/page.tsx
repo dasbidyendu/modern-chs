@@ -5,7 +5,7 @@ import { login } from "./actions";
 
 const page = () => {
   return (
-    <div className="h-dvh w-dvw bg-transparent flex justify-center gap-[200px] items-center  ">
+    <div className="h-dvh w-dvw bg-gradient-to-tr from-[rgb(113,127,255)] to-[rgb(221,219,251)] flex justify-center gap-[200px] items-center  ">
       <AuthSideCard
         href="register"
         content="Don't have an account ?"
@@ -16,7 +16,7 @@ const page = () => {
           mail id
         </label>
         <input
-          className="w-2/3 h-[30px] bg-white outline-none border-none px-2 rounded-[10px] focus:shadow-[#7a7ece9b] focus:shadow-md transition-all"
+          className="w-2/3  h-[30px] bg-white outline-none border-none px-2 rounded-[10px] focus:shadow-[#7a7ece9b] focus:shadow-md transition-all"
           id="email"
           name="email"
           type="email"

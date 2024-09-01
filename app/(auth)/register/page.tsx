@@ -12,7 +12,7 @@ const page = () => {
   const data = { email, userName, password };
 
   return (
-    <div className="h-dvh w-dvw bg-transparent flex justify-center items-center  ">
+    <div className="h-dvh w-dvw bg-transparent flex justify-center items-center bg-gradient-to-bl from-[rgb(113,127,255)] to-[rgb(221,219,251)] ">
       <form className="w-1/3 h-1/2 flex flex-col gap-[10px] justify-center ">
         <label htmlFor="email" className="text-[#0000007e]">
           mail id

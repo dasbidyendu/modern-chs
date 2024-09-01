@@ -3,14 +3,7 @@
 import AuthSideCard from "@/app/components/auth-side-card";
 import { signup } from "../login/actions";
 
-import { useState } from "react";
-
 const page = () => {
-  const [email, setEmail] = useState("");
-  const [userName, setUserName] = useState("");
-  const [password, setPassword] = useState("");
-  const data = { email, userName, password };
-
   return (
     <div className="h-dvh w-dvw bg-transparent flex justify-center items-center bg-gradient-to-bl from-[rgb(113,127,255)] to-[rgb(221,219,251)] ">
       <form className="w-1/3 h-1/2 flex flex-col gap-[10px] justify-center ">
@@ -50,7 +43,7 @@ const page = () => {
 
         <div className="flex gap-[5px]">
           <input type="checkbox"></input>
-          <p className="text-[#0000007e]">i'm not a robot</p>
+          <p className="text-[#0000007e]">i &#39 m not a robot</p>
         </div>
         <div className="w-2/3 flex justify-center items-center">
           <button

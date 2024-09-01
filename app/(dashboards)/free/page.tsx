@@ -104,7 +104,7 @@ const page = () => {
           </div>
           <div className="flex justify-between px-[190px] font-normal text-black text-[20px] ">
             <Link href={""} className="hover:text-white transition-all">
-              Check Hospital's Rating
+              Check Hospital Rating
             </Link>
             <Link href={""} className="hover:text-white transition-all">
               Rate a hospital

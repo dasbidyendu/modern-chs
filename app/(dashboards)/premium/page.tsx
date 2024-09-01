@@ -60,7 +60,7 @@ const page = () => {
               HOSPITAL SCHEDULE
             </Link>
             <Link href={""} className="hover:text-gray-200  transition-all">
-              DOCTOR'S SCHEDULE
+              DOCTOR SCHEDULE
             </Link>
             <Link href={""} className="hover:text-gray-200  transition-all">
               HOSPITAL BED VACANCY

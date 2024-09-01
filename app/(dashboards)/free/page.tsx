@@ -9,7 +9,10 @@ const page = () => {
       <div className="flex-1 grid py-[50px] px-[180px]  grid-cols-2 place-content-evenly place-items-center">
         <div className="w-[600px] h-[300px] shadow-md rounded-2xl bg-gradient-to-br from-[#7270D84e] to-[#fd55924e] flex justify-center items-center">
           <div className="flex flex-col w-[60%] text-left pl-6 pt-8 gap-4 text-wrap h-full ">
-            <Link href={"/"} className="text-[#a10634] text-3xl font-normal">
+            <Link
+              href={"/blood-bank"}
+              className="text-[#a10634] text-3xl font-normal"
+            >
               BLOOD BANK
             </Link>
             <p className="text-[20px] font-light text-black">
@@ -28,7 +31,10 @@ const page = () => {
         </div>
         <div className="w-[600px] h-[300px] rounded-2xl shadow-md bg-gradient-to-br from-[#0e2dd14e] to-[#d35dfd4e] flex justify-center items-center">
           <div className="flex flex-col w-[60%] text-left pl-6 pt-8 gap-4 text-wrap h-full ">
-            <Link href={"/"} className="text-[#111a47] text-3xl font-normal">
+            <Link
+              href={"/find-oxygen"}
+              className="text-[#111a47] text-3xl font-normal"
+            >
               OXYGEN AVAILABILITY
             </Link>
             <p className="text-[20px] font-light text-black">
@@ -47,7 +53,10 @@ const page = () => {
         </div>
         <div className="w-[600px] h-[300px] rounded-2xl shadow-md bg-gradient-to-br from-[#0e2dd14e] to-[#5dfd634e] flex justify-center items-center">
           <div className="flex flex-col w-[60%] text-left pl-6 pt-8 gap-4 text-wrap h-full ">
-            <Link href={"/"} className="text-[#111a47] text-3xl font-normal">
+            <Link
+              href={"/find-pharmacies"}
+              className="text-[#111a47] text-3xl font-normal"
+            >
               NEAREST PHARMACY AND MEDICAL
             </Link>
             <p className="text-[20px] font-light text-black">
@@ -67,7 +76,10 @@ const page = () => {
         </div>
         <div className="w-[600px] h-[300px] rounded-2xl shadow-md bg-gradient-to-br from-[#7270D84e] to-[#fd55924e] flex justify-center items-center">
           <div className="flex flex-col w-[60%] text-left pl-6 pt-8 gap-4 text-wrap h-full ">
-            <Link href={"/"} className="text-[#111a47] text-3xl font-normal">
+            <Link
+              href={"https://www.apollopharmacy.in/"}
+              className="text-[#111a47] text-3xl font-normal"
+            >
               E-PHARMACY
             </Link>
             <p className="text-[20px] font-light text-black">
@@ -91,8 +103,12 @@ const page = () => {
             COMPLAINT SYSTEM
           </div>
           <div className="flex justify-between px-[190px] font-normal text-black text-[20px] ">
-            <Link href={"/login"}>Check Hospital's Rating</Link>
-            <Link href={"/login"}>Rate a hospital</Link>
+            <Link href={""} className="hover:text-white transition-all">
+              Check Hospital's Rating
+            </Link>
+            <Link href={""} className="hover:text-white transition-all">
+              Rate a hospital
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import Sidebar from "@/app/components/sidebar";
+import { redirect } from "next/navigation";
 import { BackgroundGradientAnimation } from "@/app/components/ui/background-gradient-animation";
 
 const page = () => {
@@ -48,7 +49,10 @@ const page = () => {
                 </details>
               </div>
               <div className="w-full h-fit flex justify-center items-center">
-                <button className="bg-white rounded-xl h-fit w-fit px-8 py-2 hover:shadow-md">
+                <button
+                  onClick={redirect("/map/bbmap")}
+                  className="bg-white rounded-xl h-fit w-fit px-8 py-2 hover:shadow-md"
+                >
                   Find
                 </button>
               </div>

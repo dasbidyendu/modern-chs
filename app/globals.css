@@ -43,10 +43,11 @@ h1:hover {
   background-clip: text;
 }
 .mid {
-  background: url("/bg.svg");
+  background: url("/bg.png");
 
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 .card {
   z-index: 10;

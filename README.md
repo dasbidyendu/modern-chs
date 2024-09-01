@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+🏥 Comprehensive Digital Healthcare Platform
+📋 Project Overview
+This project is a comprehensive digital healthcare platform aimed at simplifying healthcare management and improving accessibility. It provides users with a wide array of features designed to manage medical records, locate essential services, and streamline healthcare access in both urban and rural areas. The platform emphasizes security, convenience, and transparency, empowering users to make informed decisions about their health.
 
-## Getting Started
+🔑 Key Features
+1. 🔐 Secure Medical Data Vault
+Users can securely store and manage their medical records.
+All medical data is encrypted, ensuring privacy and confidentiality.
+2. 🏥 Real-Time Hospital and Blood Bank Locator
+Find nearby hospitals, blood banks, and dispensaries using Google Maps APIs.
+Track availability of blood types and hospital beds in real-time.
+Receive location-based information on the nearest healthcare services.
+3. 🩺 Doctor Directory and Scheduling
+A comprehensive list of doctors categorized by specialization.
+Online scheduling feature allowing users to book appointments.
+View doctors' schedules and availability in real-time.
+4. 💊 Prescription Management
+A secure space to upload, store, and manage prescriptions, similar to DigiLocker.
+Easy access to prescriptions for follow-up consultations or refills.
+5. 📊 Health Tracking
+Users can track their health parameters, including vitals and wellness statistics.
+Integration with wearables or manual input to monitor trends over time.
+6. 🌍 Rural Healthcare Services
+Healthcare Booths: Kiosks placed in rural areas with real-time information displays.
+Essential healthcare resources and contacts available for underserved communities.
+7. 📝 Complaint Management System
+Users can raise complaints or queries about healthcare services.
+Streamlined system for managing and resolving complaints efficiently.
+💻 Technologies Used
+Frontend: TypeScript, React, Next.js
+Backend: Supabase, Node.js
+Database: PostgreSQL
+API Integration: Google Maps APIs for location-based services
+Authentication: Supabase Auth for secure login and user management
+Cloud Storage: Secure file storage for medical records
+⚙ Installation and Setup
+Prerequisites
+Node.js
+Supabase Account
+Google Maps API Key
+Steps to Run Locally
+Clone the repository:
 
-First, run the development server:
+bash
+Copy code
+git clone https://github.com/your-username/healthcare-platform.git
+Navigate to the project directory:
 
-```bash
+bash
+Copy code
+cd healthcare-platform
+Install dependencies:
+
+bash
+Copy code
+npm install
+Set up environment variables:
+
+Create a .env.local file in the root directory.
+Add your Supabase credentials and Google Maps API Key:
+makefile
+Copy code
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+Start the development server:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open the app in your browser:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+🤝 Contributing
+We welcome contributions! To contribute:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Fork the repository.
+Create a new branch (git checkout -b feature-name).
+Make your changes and commit them (git commit -m 'Add feature').
+Push to the branch (git push origin feature-name).
+Create a Pull Request.

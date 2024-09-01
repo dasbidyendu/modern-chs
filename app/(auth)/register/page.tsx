@@ -43,7 +43,7 @@ const page = () => {
 
         <div className="flex gap-[5px]">
           <input type="checkbox"></input>
-          <p className="text-[#0000007e]">i &#39 m not a robot</p>
+          <p className="text-[#0000007e]">i am not a robot</p>
         </div>
         <div className="w-2/3 flex justify-center items-center">
           <button

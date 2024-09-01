@@ -147,7 +147,7 @@ const page = () => {
               href={"/login"}
               className="hover:text-gray-200 transition-all"
             >
-              Check Hospital's Rating
+              Check Hospital Rating
             </Link>
             <Link
               href={"/login"}
